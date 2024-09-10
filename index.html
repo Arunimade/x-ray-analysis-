@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-ray Pneumonia Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>X-ray Pneumonia Detection</h1>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" accept="image/*">
+            <button type="submit">Process Image</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Analysis Result</h2>
+            <p id="diagnosis"></p>
+            <div id="images">
+                <img id="originalImage" alt="Original X-ray">
+                <canvas id="processedImageCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
